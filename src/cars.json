@@ -1,0 +1,61 @@
+  [{
+          "id": 1,
+          "name": "Acura",
+          "image": "acura.jpg"
+      },
+      {
+          "id": 2,
+          "name": "Aston Martin",
+          "image":"aston_martin.jpeg"
+      },
+      {
+          "id": 3,
+          "name": "Audi",
+          "image":"audi.jpeg"
+      },
+      {
+          "id": 4,
+          "name": "BMW",        
+          "image":"BMW.jpeg"
+      },
+      {
+          "id": 5,
+          "name": "Dodge Challenger",
+          "image":"challenger.jpeg"
+      },
+      {
+          "id": 6,
+          "name": "Corvette",
+          "image":"corvette.jpeg"
+      },
+      {
+          "id": 7,
+          "name": "Lamborghini",
+          "image":"lambo.jpeg"
+      },
+      {
+          "id": 8,
+          "name": "Maclaren",
+          "image":"maclaren.jpeg"
+      },
+      {
+          "id": 9,
+          "name": "Maserati",
+          "image":"maserati.jpeg"
+      },
+      {
+          "id": 10,
+          "name": "Mustang",
+          "image":"mustang.jpeg"
+      },
+      {
+          "id": 11,
+          "name": "Tesla",
+          "image":"tesla.jpeg"
+      },
+      {
+          "id": 12,
+          "name": "VW",
+          "image":"vw.jpeg"
+      }
+  ]
