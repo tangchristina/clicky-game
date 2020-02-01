@@ -1,13 +1,14 @@
 import React from "react";
+import "./style.css"
 
 function Card(props) {
     return (
-      <div className="card"
-      >
-        <div className="img-container">
-          <span onClick={() => props.shuffleCard(props.id)} className="shuffle"></span>
-            <img alt={props.name} src={props.image}   />
-        </div>
+      <div className="col sm-3 d-flex justify-content-center">
+      <div className="card" onClick={() => props.shuffleCards(props.id)}>
+      <div className="img-container">
+      <img alt={props.name} src={props.image}   />
+      </div>
+      </div>
       </div>
     );
   }

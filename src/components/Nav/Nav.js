@@ -1,14 +1,19 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
   return (
   
     <nav className="navbar navbar-dark bg-dark">
-      <a className="navbar-brand" href="/">
+      
+      <a className="navbar-brand h3" href="/">
         Clicky-Game
       </a>
-      <ul className="navbar-brand">Click an image to begin!</ul>
-      
+      <div className="navbar-right h2 text-white">Current Score: 
+                <span id="game-score">{props.score}</span>
+            </div>
+            <div className="navbar-right text-white h2">High Score: 
+                <span id="high-score">{props.highScore}</span>
+            </div>
     </nav>
     
   );
