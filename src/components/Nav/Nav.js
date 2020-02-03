@@ -9,10 +9,10 @@ function Nav(props) {
         Clicky-Game
       </a>
       <div className="navbar-right h2 text-white">Current Score: 
-                <span id="game-score">{props.score}</span>
+                <span id="current-score"> {props.score}</span>
             </div>
-            <div className="navbar-right text-white h2">High Score: 
-                <span id="high-score">{props.highScore}</span>
+            <div className="navbar-right text-white h2">High Score:  
+                <span id="high-score"> {props.highScore}</span>
             </div>
     </nav>
     

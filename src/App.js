@@ -7,26 +7,51 @@ import Card from "./components/Card/Card"
 import cars from "./cars.json";
 
 
-// class App extends Component {
-//   state = {
-//     books: []
-//   };
-
 class App extends Component {
   state = {
-    cars
+    cars,
+    clickedCars:[],
+    score: 0,
+    highScore: 0,
   };
-  render(){
+
+  //shuffle the cards in the browser when clicked
+  shuffleArray = id => {
+    let clickedCars = this.state.clickedCars;
+
+    if(clickedCars.includes(id)){
+      this.setState({ clickedCars: [], score: 0, highScore: this.state.score});
+      return cars;
+    }else{
+      clickedCars.push(id)
+    
+      if(clickedCars.length === 12){
+        this.setState({score: 12, clickedCars: []});
+        console.log('You Win');
+        return cars;
+      }
+
+      this.setState({ cars, clickedCars, score: clickedCars.length });
+
+    for (let i = cars.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cars[i], cars[j]] = [cars[j], cars[i]];
+    }  
+}
+  }
+
+  render() {
   return (
     <div>
-      <Nav message={this.state.message} highScore={this.state.highScore} score={this.state.score}></Nav>
+      <Nav highScore={this.state.highScore} score={this.state.score}></Nav>
       <Jumbotron />
       <div className = "container">
       <Wrapper>
         {this.state.cars.map(car => (
           <Card
+            shuffleArray={this.shuffleArray}
             id={car.id}
-            key={car.key}
+            key={car.id}
             name={car.name}
             image={car.image}
           />

@@ -1,61 +1,73 @@
   [{
           "id": 1,
           "name": "Acura",
-          "image": "acura.jpg"
+          "image": "acura.jpg",
+          "isClicked": false
       },
       {
           "id": 2,
           "name": "Aston Martin",
-          "image":"aston_martin.jpeg"
+          "image":"aston_martin.jpeg",
+          "isClicked": false
       },
       {
           "id": 3,
           "name": "Audi",
-          "image":"audi.jpeg"
+          "image":"audi.jpeg",
+          "isClicked": false
       },
       {
           "id": 4,
           "name": "BMW",        
-          "image":"BMW.jpeg"
+          "image":"BMW.jpeg",
+          "isClicked": false
       },
       {
           "id": 5,
           "name": "Dodge Challenger",
-          "image":"challenger.jpeg"
+          "image":"challenger.jpeg",
+          "isClicked": false
       },
       {
           "id": 6,
           "name": "Corvette",
-          "image":"corvette.jpeg"
+          "image":"corvette.jpeg",
+          "isClicked": false
       },
       {
           "id": 7,
           "name": "Lamborghini",
-          "image":"lambo.jpeg"
+          "image":"lambo.jpeg",
+          "isClicked": false
       },
       {
           "id": 8,
           "name": "Maclaren",
-          "image":"maclaren.jpeg"
+          "image":"maclaren.jpeg",
+          "isClicked": false
       },
       {
           "id": 9,
           "name": "Maserati",
-          "image":"maserati.jpeg"
+          "image":"maserati.jpeg",
+          "isClicked": false
       },
       {
           "id": 10,
           "name": "Mustang",
-          "image":"mustang.jpeg"
+          "image":"mustang.jpeg",
+          "isClicked": false
       },
       {
           "id": 11,
           "name": "Tesla",
-          "image":"tesla.jpeg"
+          "image":"tesla.jpeg",
+          "isClicked": false
       },
       {
           "id": 12,
           "name": "VW",
-          "image":"vw.jpeg"
+          "image":"vw.jpeg",
+          "isClicked": false
       }
   ]
