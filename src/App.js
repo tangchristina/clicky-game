@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Nav from "./components/Nav/Nav";
