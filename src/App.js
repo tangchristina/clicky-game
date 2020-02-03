@@ -12,6 +12,7 @@ class App extends Component {
     clickedCars:[],
     score: 0,
     highScore: 0,
+    message: "Click on a car image to earn points, but don't click on any more than once."
   };
 
   //shuffle the cards in the browser when clicked
@@ -19,13 +20,13 @@ class App extends Component {
     let clickedCars = this.state.clickedCars;
 
     if(clickedCars.includes(id)){
-      this.setState({ clickedCars: [], score: 0, highScore: this.state.score});
+      this.setState({ clickedCars: [], score: 0, highScore: this.state.score, message: "You lost. Try Again!"});
       return cars;
     }else{
       clickedCars.push(id)
     
       if(clickedCars.length === 12){
-        this.setState({score: 12, clickedCars: []});
+        this.setState({score: 12, clickedCars: [], message: "You Win!"});
         console.log('You Win');
         return cars;
       }
@@ -43,7 +44,7 @@ class App extends Component {
   return (
     <div>
       <Nav highScore={this.state.highScore} score={this.state.score}></Nav>
-      <Jumbotron />
+      <Jumbotron message={this.state.message} />
       <div className = "container">
       <Wrapper>
         {this.state.cars.map(car => (
