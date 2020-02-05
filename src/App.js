@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
-import Wrapper from "./components/Wrapper/Wrapper";
+import Wrapper from "./components/Wrapper/wrapper";
 import Nav from "./components/Nav/Nav";
 import Card from "./components/Card/Card"
 import cars from "./cars.json";
